@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1034084671943",
+    "project_id": "customer-app-47b79",
+    "storage_bucket": "customer-app-47b79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034084671943:android:2cab639b2a1dea442cf9e2",
+        "android_client_info": {
+          "package_name": "com.purplestage.clientapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034084671943-3vhcig0s31onfvg1ro8k14h730raqhnh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.purplestage.clientapp",
+            "certificate_hash": "7b3cb125c597229be697a7d48a3c5aac2b5def6d"
+          }
+        },
+        {
+          "client_id": "1034084671943-44bujivk4sgmkiqq0f05o3o8nhmshb0q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD09FezC5fJFfhX82hizUBmrpmwlOd0QP8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034084671943-44bujivk4sgmkiqq0f05o3o8nhmshb0q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1034084671943-oef4fdsub8ktj42v07fec2ns2ucnodav.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.purplestage.clientapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
