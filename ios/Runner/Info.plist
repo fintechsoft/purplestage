@@ -35,8 +35,6 @@
                 <!--REVERSED_CLIENT_ID com.googleusercontent.apps.{REVERSED_CLIENT_ID}-->
                 <string>com.googleusercontent.apps.889759666168-911s1afh1bslps3p90cm3j9au54l0crd</string>
 
-                <!-- TikTok SDK URL Scheme -->
-                <string>tiktok7597754798540079122</string>
 			</array>
 		</dict>
 	</array>
@@ -48,6 +46,11 @@
 	<string>c84a6220e6b148507e08f43ad28c5fa5</string>
 	<key>FacebookDisplayName</key>
 	<string>PurpleStage</string>
+	<key>FacebookAutoLogAppEventsEnabled</key>
+    <false/>
+    <key>FacebookAdvertiserIDCollectionEnabled</key>
+    <false/>
+
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
         <string>fbapi</string>
@@ -69,6 +72,8 @@
 	<string>This app requires access to the gallery to upload profile picture.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
