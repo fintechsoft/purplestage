@@ -14,26 +14,6 @@ Future<void> main() async {
     );
   }
   setPathUrlStrategy();
-  // if(GetPlatform.isWeb || GetPlatform.isAndroid){
-  //   await Firebase.initializeApp(
-  //       options: const FirebaseOptions(
-  //           apiKey: "AIzaSyATwpBSYz69b5Y9ryQLELOJIHZSpJcXf7I",
-  //           authDomain: "demancms.firebaseapp.com",
-  //           projectId: "demancms",
-  //           storageBucket: "demancms.appspot.com",
-  //           messagingSenderId: "889759666168",
-  //           appId: "1:889759666168:web:ab661cb341d3e47384d00d"
-  //       )
-  //   );
-  //   await FacebookAuth.instance.webAndDesktopInitialize(
-  //     appId: "637072917840079",
-  //     cookie: true,
-  //     xfbml: true,
-  //     version: "v15.0",
-  //   );
-  // }else{
-  //   await Firebase.initializeApp();
-  // }
 
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
@@ -185,6 +165,7 @@ class _MyAppState extends State<MyApp> {
 class MyHttpOverrides extends HttpOverrides {
   @override
   HttpClient createHttpClient(SecurityContext? context) {
-    return super.createHttpClient(context)..badCertificateCallback = (X509Certificate cert, String host, int port) => true;
+    return super.createHttpClient(context)
+      ..badCertificateCallback = (cert, host, port) => true;
   }
 }
