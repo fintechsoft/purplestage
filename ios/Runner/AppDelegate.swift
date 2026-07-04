@@ -5,7 +5,6 @@ import Firebase
 import flutter_downloader
 import FBSDKCoreKit
 import FBSDKLoginKit
-import TikTokBusinessSDK
 
 
 @main
