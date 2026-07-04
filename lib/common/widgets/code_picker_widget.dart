@@ -152,7 +152,7 @@ class _CodePickerWidgetState extends State<CodePickerWidget> {
   void showCountryCodePickerDialog() {
     if (!GetPlatform.isAndroid && !GetPlatform.isIOS) {
       showDialog(
-        barrierColor: widget.barrierColor ?? Colors.grey.withOpacity(0.5),
+        barrierColor: widget.barrierColor ?? Colors.grey.shade400,
         context: context,
         builder: (context) => Center(
           child: Container(
@@ -176,7 +176,10 @@ class _CodePickerWidgetState extends State<CodePickerWidget> {
                 hideSearch: widget.hideSearch!,
                 closeIcon: widget.closeIcon,
                 hideHeaderText: false,
-                headerAlignment: MainAxisAlignment.center,
+                headerAlignment: MainAxisAlignment.spaceBetween,
+                headerTextStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                headerText: "Select Country",
+                topBarPadding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 20),
               ),
             ),
           ),
@@ -211,7 +214,10 @@ class _CodePickerWidgetState extends State<CodePickerWidget> {
             hideSearch: widget.hideSearch!,
             closeIcon: widget.closeIcon,
             hideHeaderText: false,
-            headerAlignment: MainAxisAlignment.center,
+            headerAlignment: MainAxisAlignment.spaceBetween,
+            headerTextStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            headerText: "Select Country",
+            topBarPadding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 20),
           ),
         ),
         useRootNavigator: true,
