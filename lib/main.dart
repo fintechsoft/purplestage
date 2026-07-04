@@ -137,6 +137,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
 
+
     return GetBuilder<ThemeController>(builder: (themeController) {
       return GetBuilder<LocalizationController>(builder: (localizeController) {
         return GetBuilder<SplashController>(builder: (splashController) {
