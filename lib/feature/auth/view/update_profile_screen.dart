@@ -170,7 +170,7 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
 
   _socialLogout(){
     Get.find<AuthController>().googleLogout();
-    Get.find<AuthController>().signOutWithFacebook();
+    // Get.find<AuthController>().signOutWithFacebook();
   }
 
   Future<bool> _existFromApp() async{

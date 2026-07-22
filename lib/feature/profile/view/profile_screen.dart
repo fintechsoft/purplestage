@@ -103,8 +103,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                     icon: Images.logoutIcon, description: 'are_you_sure_to_logout'.tr, isLogOut: true, onYesPressed: ()async {
                                   Get.find<AuthController>().clearSharedData();
                                   Get.find<AuthController>().googleLogout();
-                                  Get.find<AuthController>().signOutWithFacebook();
-                                  Get.find<AuthController>().signOutWithFacebook();
+                                  // Get.find<AuthController>().signOutWithFacebook();
+                                  // Get.find<AuthController>().signOutWithFacebook();
                                   Get.offAllNamed(RouteHelper.getInitialRoute());
                                 }), useSafeArea: false);
                               }else {

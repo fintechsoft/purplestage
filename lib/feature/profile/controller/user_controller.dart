@@ -89,7 +89,7 @@ class UserController extends GetxController implements GetxService {
       customSnackBar('your_account_remove_successfully'.tr);
       Get.find<AuthController>().clearSharedData();
       Get.find<AuthController>().googleLogout();
-      Get.find<AuthController>().signOutWithFacebook();
+      // Get.find<AuthController>().signOutWithFacebook();
       Get.offAllNamed(RouteHelper.getInitialRoute());
     }else{
       Get.back();

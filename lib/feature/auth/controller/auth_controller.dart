@@ -683,9 +683,9 @@ class AuthController extends GetxController implements GetxService {
   }
 
 
-  Future<void> signOutWithFacebook() async {
-    await FacebookAuth.instance.logOut();
-  }
+  // Future<void> signOutWithFacebook() async {
+  //   await FacebookAuth.instance.logOut();
+  // }
 
   Future<void> updateToken() async {
     await authRepo.updateToken();

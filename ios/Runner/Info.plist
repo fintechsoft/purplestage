@@ -29,9 +29,6 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-                <!-- This is the fb{Facebook App ID}, replace with your own -->
-                <string>fb1216934565526698</string>
-
                 <!--REVERSED_CLIENT_ID com.googleusercontent.apps.{REVERSED_CLIENT_ID}-->
                 <string>com.googleusercontent.apps.889759666168-911s1afh1bslps3p90cm3j9au54l0crd</string>
 
@@ -40,24 +37,6 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
-	<key>FacebookAppID</key>
-	<string>637072917840079</string>
-	<key>FacebookClientToken</key>
-	<string>c84a6220e6b148507e08f43ad28c5fa5</string>
-	<key>FacebookDisplayName</key>
-	<string>PurpleStage</string>
-	<key>FacebookAutoLogAppEventsEnabled</key>
-    <false/>
-    <key>FacebookAdvertiserIDCollectionEnabled</key>
-    <false/>
-
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-        <string>fbapi</string>
-        <string>fb-messenger-share-api</string>
-        <string>fbauth2</string>
-        <string>fbshareextension</string>
-	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>LSSupportsOpeningDocumentsInPlace</key>
@@ -103,10 +82,5 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 
-	<key>NSUserTrackingUsageDescription</key>
-        <string>We use this identifier to deliver personalized ads and track user interactions for analytics.</string>
-
-	<!-- <key>NSUserTrackingUsageDescription</key>
-            <string>Your explanation for requesting tracking permission goes here, for example: "We use this identifier to deliver personalized ads and track user interactions for analytics."</string> -->
-</dict>
+	</dict>
 </plist>

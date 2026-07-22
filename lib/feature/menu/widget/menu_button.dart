@@ -40,7 +40,7 @@ class MenuButton extends StatelessWidget {
                     Get.find<AuthController>().clearSharedData();
                 Get.find<AuthController>().logOut();
                 Get.find<AuthController>().googleLogout();
-                Get.find<AuthController>().signOutWithFacebook();
+                // Get.find<AuthController>().signOutWithFacebook();
                 Get.find<LocationController>().updateSelectedAddress(null);
                 Get.offAllNamed(RouteHelper.getInitialRoute());
                 // customSnackBar("logged_out_successfully".tr, type : ToasterMessageType.success);

@@ -104,16 +104,16 @@ class SocialLoginButton extends StatelessWidget {
       }
     }
 
-    else if(socialLoginType == SocialLoginType.facebook){
-      LoginResult result = await FacebookAuth.instance.login();
-      if (result.status == LoginStatus.success) {
-        Map userData = await FacebookAuth.instance.getUserData();
-        Get.find<AuthController>().loginWithSocialMedia(SocialLogInBody(
-            email: userData['email'], userName: userData['name'], token: result.accessToken!.token, uniqueId: result.accessToken!.userId, medium: 'facebook',
-            guestId: Get.find<SplashController>().getGuestId()
-        ), route ,fromPage: fromPage);
-      }
-    }
+    // else if(socialLoginType == SocialLoginType.facebook){
+    //   LoginResult result = await FacebookAuth.instance.login();
+    //   if (result.status == LoginStatus.success) {
+    //     Map userData = await FacebookAuth.instance.getUserData();
+    //     Get.find<AuthController>().loginWithSocialMedia(SocialLogInBody(
+    //         email: userData['email'], userName: userData['name'], token: result.accessToken!.token, uniqueId: result.accessToken!.userId, medium: 'facebook',
+    //         guestId: Get.find<SplashController>().getGuestId()
+    //     ), route ,fromPage: fromPage);
+    //   }
+    // }
 
     else if(socialLoginType == SocialLoginType.apple){
       final credential = await SignInWithApple.getAppleIDCredential(scopes: [

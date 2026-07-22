@@ -133,7 +133,7 @@ export 'package:purplestage/common/widgets/title_widget.dart';
 export 'dart:collection';
 export 'package:purplestage/common/widgets/no_internet_screen.dart';
 export 'package:google_sign_in/google_sign_in.dart';
-export 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
+// export 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 export 'package:purplestage/utils/gaps.dart';
 export 'package:purplestage/feature/offers/offer_screen.dart';
 export 'package:url_launcher/url_launcher.dart';

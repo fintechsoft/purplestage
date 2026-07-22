@@ -141,7 +141,7 @@ class NotificationHelper {
           Get.find<AuthController>().logOut();
           Get.find<AuthController>().clearSharedData();
           Get.find<AuthController>().googleLogout();
-          Get.find<AuthController>().signOutWithFacebook();
+          // Get.find<AuthController>().signOutWithFacebook();
           Get.find<LocationController>().updateSelectedAddress(null);
           Get.offNamed(RouteHelper.getSignInRoute());
           customSnackBar(message.data['title'], duration: 4);
